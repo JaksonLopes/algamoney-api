@@ -5,6 +5,8 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 @Getter
@@ -16,6 +18,7 @@ public class CategoriaEntity {
     @Column(name = "id")
     private Long codigo;
 
-    @NotBlank
+    @NotNull
+    @Size(max = 20 , min = 2)
     private String nome;
 }

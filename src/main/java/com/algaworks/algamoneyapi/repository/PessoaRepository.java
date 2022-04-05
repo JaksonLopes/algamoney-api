@@ -1,10 +1,9 @@
 package com.algaworks.algamoneyapi.repository;
 
-import com.algaworks.algamoneyapi.model.CategoriaEntity;
+import com.algaworks.algamoneyapi.model.PessoaEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface CategoriaRepository extends JpaRepository<CategoriaEntity,Long> {
-
+public interface PessoaRepository extends JpaRepository<PessoaEntity, Long> {
 }

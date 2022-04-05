@@ -5,19 +5,23 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 @Entity
-@Getter
 @Setter
-@Table(name = "categoria")
-public class CategoriaEntity {
+@Getter
+@Table(name = "pessoa")
+public class PessoaEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
     private Long id;
 
     @NotNull
-    @Size(max = 20 , min = 2)
     private String nome;
+
+    private Boolean ativo;
+
+    @Embedded
+    private EnderecoEntity endereco ;
+
+
 }

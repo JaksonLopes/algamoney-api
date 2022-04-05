@@ -1,0 +1,17 @@
+POST http://localhost:8080/pessoa
+Content-Type: application/json
+
+{
+  "nome": "sandro",
+  "endereco": {
+    "logradouro": "qnr1 conjuto d",
+    "numero": "16",
+    "bairro": "Ceilandia",
+    "cep": "72275104",
+    "cidade": "Brasilia",
+    "estado": "DF"
+  },
+  "ativo": "true"
+}
+
+###
